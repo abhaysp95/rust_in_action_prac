@@ -1,4 +1,4 @@
-#[derive(Debug)]  // easy way to work this program is implement Copy (Clone, Copy) trait
+#[derive(Debug, Clone, Copy)]  // easy way to work this program is implement Copy (Clone, Copy) trait
 struct CubeSat {
     id: u64,
 }

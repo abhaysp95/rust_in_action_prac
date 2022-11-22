@@ -25,8 +25,16 @@ impl CPU {
     }
 
     fn add_xy(&mut self, x: u8, y: u8) {
+        /* print_type_of(&self.registers);
+        print_type_of(&self.registers[x]); */
+        // "x as usize" because sliceIndex[T] is implemented for usize
         self.registers[x as usize] += self.registers[y as usize];
     }
+}
+
+#[allow(dead_code)]
+fn print_type_of<T>(_: &T) {
+    println!("{}", std::any::type_name::<T>());
 }
 
 fn main() {

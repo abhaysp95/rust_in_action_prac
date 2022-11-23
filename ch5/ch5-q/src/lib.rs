@@ -77,8 +77,4 @@ mod tests {
         assert_eq!(n1, n2);
     }
 
-    #[test]
-    fn test_mock_rand() {
-        assert_eq!(0xff, mock_rand(0xff));
-    }
 }
